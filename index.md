@@ -28,6 +28,6 @@ Before learning how to configure your calendar, go through this [Quick Tutorial]
 
 ## Contents
 1. [Quick Tutorial](Tutorial.md) - Important to understanding topics below
-2. [Creating Headers](Headers.md)
+2. [Creating Headers](Headers.html)
 3. [Configuring calendar scrolling](CalendarScrolling.md)
 
