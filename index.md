@@ -24,7 +24,7 @@ This Library is `UICollectionView` subclass. This means your date cells will loo
 
 
 ## Calendar configurations
-Before learning how to configure your calendar, go through this [Quick Tutorial](/Tutorial.html). Explanations below will assume you've already read it.
+Before learning how to configure your calendar, go through this [Quick Tutorial](Tutorial.md). Explanations below will assume you've already read it.
 
 ## Contents
 1. [Quick Tutorial](Tutorial.md) - Important to understanding topics below
