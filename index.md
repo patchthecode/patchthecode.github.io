@@ -18,8 +18,8 @@ This Library is `UICollectionView` subclass. This means your date cells will loo
 
 
 
-| <img src="https://cloud.githubusercontent.com/assets/12565719/14400904/878bd590-fe00-11e5-9ae6-eb97107af0c0.png" height="300" width="170">  | <img src="https://cloud.githubusercontent.com/assets/6205705/15713434/b6c8867e-2816-11e6-8b90-cd82caea28dd.gif" height="300" width="170">  | <img src="https://cloud.githubusercontent.com/assets/4571502/16706761/ff11073e-45ea-11e6-8d1a-79fc0c15df90.gif" height="200" width="200">  | **[See more](https://github.com/patchthecode/JTAppleCalendar/issues/2)**  
-|---|---|---|---
+| A | B | C | D |  
+|---|---|---|---|
 
 
 ## Calendar configurations
