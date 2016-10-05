@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## How do you want users to scroll the calendar?
 
 There are 7 modes. Think about the feel of your calendar. Then choose a mode below.
