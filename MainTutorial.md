@@ -1,6 +1,5 @@
 ---
-layout: recipe
-title: Tutorial
+layout: default
 ---
 
 

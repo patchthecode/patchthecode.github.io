@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## How to implement the 2 kinds of headers
 
 ### 1. Outside headers
