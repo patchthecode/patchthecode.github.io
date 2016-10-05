@@ -18,10 +18,10 @@ This Library is `UICollectionView` subclass. This means your date cells will loo
 
 
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+Markdown | Less | Pretty | KK
+--- | --- | --- | ---
+A | B | C | D
+1 | 2 | 3 | 4
 
 
 ## Calendar configurations
