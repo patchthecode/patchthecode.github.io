@@ -14,7 +14,7 @@ ___
 ## How will my calendadar dateCells look with this library?
 
 
-This Library is `UICollectionView` subclass. This means your date cells will look however you want it to look. 100% customizable.
+This Library is a `UICollectionView` subclass. This means your date cells will look however you want it to look. 100% customizable.
 
 
 
@@ -25,6 +25,7 @@ This Library is `UICollectionView` subclass. This means your date cells will loo
 
 ## Contents
 1. [Quick Tutorial](MainTutorial.md) - Important to understanding topics below
-2. [Creating Headers](Headers.md)
+2. [Creating headers](Headers.md)
 3. [Configuring calendar scrolling](CalendarScrolling.md)
+4. [Different ways to configure in/out dates](#inoutdates)
 
