@@ -110,7 +110,7 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
 
 The parameters should be self explainatory. The only ones that might be unfamiliar to you are: `in-dates` and `out-dates`. The following diagram will bring you up to speed.
 
-<img src=https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png height=300 width=300>
+<img width="300" src=https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png>
 
 Now that JTAppleCalendar knows its configuration properties, it is ready to start displaying dateCells. Let's setup up the delegate protocol method to allow us to see the beautiful date cells we have designed earlier.
 
