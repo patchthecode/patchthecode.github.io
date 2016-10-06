@@ -6,6 +6,8 @@ layout: default
 
 <img src=https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png height=300 width= 300>
 
+![](https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png =200x300)
+
 ## Configuring
 Configuring your dateCells is done in one delegate function.
 
