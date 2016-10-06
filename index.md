@@ -24,9 +24,9 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 
 
 ## Contents
-1. [Quick Tutorial](/about.md) - Important to understanding topics below
-2. [Creating headers](about.md)
-3. [Configuring calendar scrolling](about.html)
-4. [Different ways to configure in/out dates](/about.html)
+1. [Quick Tutorial](/about) - Important to understanding topics below
+2. [Creating headers](about)
+3. [Configuring calendar scrolling](about)
+4. [Different ways to configure in/out dates](/about)
 5.  <a href="http://www.w3schools.com">Visit W3Schools</a> 
 
