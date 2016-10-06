@@ -15,6 +15,7 @@ JTAppleCalendar is similar to setting up a UITableView with a custom cell.
 
 
 There are two parts: The `cell`, and the `calendarView`
+
 ##### 1. The cell
 ---
 Like a UITableView, the cell has 2 sub-parts. 
@@ -76,13 +77,13 @@ I prefer setting up my protocols on my controllers using extensions to keep my c
 
 The data-source protocol has only one function which needs to return a value of type `ConfigurationParameters`. This value requires 7 sub-values.
  
-- Start boundary date: date calendar will start from
-- End boundary date: date calendar will end
-- The number of rows per month you want displayed
-- A Calendar() instance which you should configure to your desired time zone. Please configure this properly.
-- Generate in dates
-- Generate out dates
-- First day of week. 
+- **Start boundary date**: date calendar will start from
+- **End boundary date**: date calendar will end
+- **Rows per month**: The number of rows per month you want displayed
+- **A Calendar() instance**: which you should configure to your desired time zone. Please configure this properly
+- **In-dates**: Generate in dates
+- **Out-Dates**: Generate out dates
+- **First day of week**: Determine which is the first day of the week to start with 
 
 **Paste the following code in your project.**
 
@@ -111,9 +112,7 @@ The parameters should be self explainatory. The only ones that might be unfamili
 
 <img src=https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png height=300 width= 300>
 
-In-dates can be turned off/on. Out-dates can be generated either till the end of a row, till the end of the 6x7 grid, or off.
-
-
+![](https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png =200x300)
 
 Now that JTAppleCalendar knows its configuration properties, it is ready to start displaying dateCells. Let's setup up the delegate protocol method to allow us to see the beautiful date cells we have designed earlier.
 
