@@ -45,6 +45,7 @@ This function provides you with **more than enough** information you can use to 
 
 
 ## So with all this information, what can we do with dateCells?
+
 ### 1. Changing the color
 
 ```swift

@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-###Quick tutorial - How to setup the calendar
+### Quick tutorial - How to setup the calendar
 **Note**: If at any point in this tutorial, you believe that you have already grasped the concept, then you can drop out at any time 👍 
 
 ________________
@@ -84,7 +84,7 @@ The data-source protocol has only one function which needs to return a value of 
 - Generate out dates
 - First day of week. 
 
-Paste the following code in your project.
+**Paste the following code in your project.**
 
 ```swift
 extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
@@ -253,5 +253,3 @@ Tutorial over.
 Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality for it.
 
 If you're really out of ideas, using the same procedure above, why not try to create a background circular shaped SelectedView to appear when ever you tap on a date cell? You can also download the example project on Github and see the possibilities.
-
-Or [Head back to main screen](http://patchthecode.github.io/JTAppleCalendar/) to see other ways to configure your calendar.
