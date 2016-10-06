@@ -13,8 +13,7 @@ JTAppleCalendar is similar to setting up a UITableView with a custom cell.
 <img width="564" alt="calendararchitecture" src="https://cloud.githubusercontent.com/assets/2439146/19026742/4b62d618-88de-11e6-90c8-c44a4195ddd2.png">
 
 
-
-There are two parts: The `cell`, and the `calendarView`
+There are two parts: The <font color="red">cell</font>, and the <font color="green">calendarView</font>
 
 ##### 1. The cell
 ---
