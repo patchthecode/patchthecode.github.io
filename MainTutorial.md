@@ -12,35 +12,34 @@ JTAppleCalendar is similar to setting up a UITableView with a custom cell.
 
 <img width="564" alt="calendararchitecture" src="https://cloud.githubusercontent.com/assets/2439146/19026742/4b62d618-88de-11e6-90c8-c44a4195ddd2.png">
 
-
-There are two parts: The <font color="red">cell</font>, and the <font color="green">calendarView</font>
+There are two parts: The <b><font color="red">Cell</font></b>, and the <b><font color="green">CalendarView</font></b>
 
 ##### 1. The cell
 ---
-Like a UITableView, the cell has 2 sub-parts. 
+Like a UITableView, the cell also has 2 sub-parts. 
 
-* First let's create a new xib file. I'll call mine *CellView.xib*. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints. 
-
-> Do you need more views setup on your cell like: event-dots, animated selection view, custom images etc? No problem. Design the cell however you want. This repository has sample code which demonstrates how you can do this easily. Cells can also be created via classes instead of XIBs.
-
+* First let's create a new xib file. I'll call mine `CellView.xib`. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints.
 
 <img width="201" alt="cellxib" src="https://cloud.githubusercontent.com/assets/2439146/19026781/c3793318-88de-11e6-8727-04b773b3700c.png">
 
 
 
-* Second , create a custom class for the xib. The new class must be a subclass of `JTAppleDayCellView`. I called mine *CellView.swift*.  Inside the class setup the following:
+* Second , create a class for the xib. The new class must be a subclass of `JTAppleDayCellView`. I called mine `CellView.swift`.  
+
+**Paste the following code inside your new class.**
 
 ```swift
-    import JTAppleCalendar 
-    class CellView: JTAppleDayCellView {
-        @IBOutlet var dayLabel: UILabel!
-    }
+import JTAppleCalendar 
+class CellView: JTAppleDayCellView {
+    @IBOutlet var dayLabel: UILabel!
+}
 ```
 
-* Finally head back to your *cellView.xib* file and make the outlet connections.
+Now let's head back to your `cellView.xib` file and make the outlet connections.
+
 - First,  select the root-view for the cell
 - Second, click on the identity inspector
-- Third, change the name of the class to one you just created: *CellView*
+- Third, change the name of the class to one you just created: `CellView`
 - Then connect your UILabel to your `dayLabel` outlet
 
 <img width="683" alt="setupinstructions" src="https://cloud.githubusercontent.com/assets/2439146/19026812/304803d4-88df-11e6-9871-53d75b32a247.png">
@@ -48,8 +47,13 @@ Like a UITableView, the cell has 2 sub-parts.
 
 ##### 2. The calendarView
 ---
-* This step is easy. Go to your Storyboard and add a `UIView` to it. 
-Then, using the same procedure like you did above for the `CellView.xib` diagram above, Set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
+* This step is easy. Go to your Storyboard and add a `UIView` to it. You can also setup your autolayout constrainst for the calendar view at this point.
+
+  Then, using the same procedure like you did above for the `CellView.xib` diagram above, Set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
+  
+  If you haven't created your ViewController class yet, do so now. I have called my viewController class simply `ViewController`.
+
+**Paste this code in your ViewController class**
 
 ```swift
 class ViewController: UIViewController {
@@ -58,31 +62,22 @@ class ViewController: UIViewController {
 .....
 ```
 
-You can also setup your autolayout constrainst for the calendar view at this point.
+After pasting the above code, do not forget to now connect this outlet to the JTAppleCalendarView on storyboard.
 
-
-##### Whats next?
-Similar to UITableView protocols, your viewController has to conform to 2 protocols for it to work
+#### Whats next?
+Similar to UITableView protocols, your ViewController has to conform to 2 protocols for it to work
 
 * JTAppleCalendarViewDataSource
 * JTAppleCalendarViewDelegate
 
 
 ##### Setting up the DataSource
-The data-source method is manditory.
-Let's set this up now on your viewController. I have called my viewController simply `ViewController`.
+The data-source protocol method is manditory.
+Let's set this up now on your ViewController class. 
 
-I prefer setting up my protocols on my controllers using extensions to keep my code neat, but you can put it where ever youre accustomed to. 
+I prefer setting up my protocols on my controllers using extensions to keep my code neat, but you can put it where ever you're accustomed to. 
 
 The data-source protocol has only one function which needs to return a value of type `ConfigurationParameters`. This value requires 7 sub-values.
- 
-- **Start boundary date**: date calendar will start from
-- **End boundary date**: date calendar will end
-- **Rows per month**: The number of rows per month you want displayed
-- **A Calendar() instance**: which you should configure to your desired time zone. Please configure this properly
-- **In-dates**: Generate in dates
-- **Out-Dates**: Generate out dates
-- **First day of week**: Determine which is the first day of the week to start with 
 
 **Paste the following code in your project.**
 
@@ -107,6 +102,14 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
     }
 ```
 
+- **Start boundary date**: date calendar will start from
+- **End boundary date**: date calendar will end
+- **Rows per month**: The number of rows per month you want displayed
+- **A Calendar() instance**: which you should configure to your desired time zone. Please configure this properly
+- **In-dates**: Generate in dates
+- **Out-Dates**: Generate out dates
+- **First day of week**: Determine which is the first day of the week to start with 
+
 The parameters should be self explainatory. The only ones that might be unfamiliar to you are: `in-dates` and `out-dates`. The following diagram will bring you up to speed.
 
 <img width="300" src="https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png">
@@ -117,54 +120,36 @@ Add the following code to your extension.
 
 ```swift
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
-        (cell as? CellView)?.setupCellBeforeDisplay(cellState, date: date)
+        let myCustomCell = cell as! CellView
+        
+        // Setup Cell text
+        myCustomCell.dayLabel.text = cellState.text
+        
+        // Setup text color
+        if cellState.dateBelongsTo == .thisMonth {
+            myCustomCell.dayLabel.textColor = UIColor.black
+         } else {
+            myCustomCell.dayLabel.textColor = UIColor.gray
+         }
     }
 ```
 
-The `setupCellBeforeDisplay:date:` function has not yet been created on your custom CellView class as yet, so let's head over to that class and implement it. 
+<b><font color="red">Important</font></b>: cache your colors in a real app else your calendar will be laggy. The above code is for demonstration only. Just like in `UITableView`, this function will be called for every cell displayed on screen so be **effecient** with this code.
 
-> Note: the code from here on is yours. You do not have to call the function this name. You don't even have to put this code in your `cellView` class. This is just a tutorial. Put the code where makes sense for your project.
+Your cell now has the ability to display text and color based on which month it belongs to. One final thing needs to be done. The Calender does not have its `delegate` and `datasource` setup.  In your `ViewController` class, 
 
-Modify your code in the CellView class to reflect the following. 
-
-```swift
-    import JTAppleCalendar
-
-    class CellView: JTAppleDayCellView {
-        @IBOutlet var dayLabel: UILabel!
-            var thisMonthColor = UIColor.black
-            var otherMonthColor = UIColor.gray
-
-
-            func setupCellBeforeDisplay(_ cellState: CellState, date: NSDate) {
-                // Setup Cell text
-                dayLabel.text =  cellState.text
-
-                // Setup text color
-                configureTextColor(cellState)
-            }
-
-            func configureTextColor(_ cellState: CellState) {
-                if cellState.dateBelongsTo == .thisMonth {
-                    dayLabel.textColor = thisMonthColor
-                } else {
-                    dayLabel.textColor = otherMonthColor
-            }
-        }
-    }
-```
-
-Your cell now has the ability to display text and color based on which month it belons to. One final thing needs to be done. The Calender does not have its `delegate` and `datasource` setup.  Head to your `ViewController` class, and add following code:
+**paste the following code**:
 
 
 ```swift
-    @IBOutlet weak var calendarView: JTAppleCalendarView! // Don't forget to hook up the outlet to your calendarView on Storyboard
-    override func viewDidLoad() {
-        super.viewDidLoad()
-            calendarView.dataSource = self
-            calendarView.delegate = self
-            calendarView.registerCellViewXib(file: "CellView") // Registering your cell is manditory
+@IBOutlet weak var calendarView: JTAppleCalendarView! 
+override func viewDidLoad() {
+    super.viewDidLoad()
+        calendarView.dataSource = self
+        calendarView.delegate = self
+        calendarView.registerCellViewXib(file: "CellView") // Registering your cell is manditory
     }
+}
 ```
 
 #### Completed! Where to go from here?
@@ -180,11 +165,11 @@ Since I am not that great of a designer yet, I will copy what one of the users o
 
 #### Setting up the color 
 ___
-Let's cheat a bit. Paste this code anywhere in your project. I'll put it in the CellView.swift file.
+Let's cheat a bit. Paste this code anywhere in your project. I'll put it in the ViewController.swift file.
 
 ```swift
-// Paste the code outside of the CellView class
-class CellView: JTAppleDayCellView {
+// Paste the code outside of the ViewController class
+class ViewController: UIViewController {
 ...
 ...
 }
@@ -202,30 +187,20 @@ extension UIColor {
 ```
 This code allows us to create UIColors from Hex codes. 
 
-Head over to your CellView.xib and change the root cell view background color to: #3A284C on interface builder. This is a dark color, so head over to the CellView.swift file you created earlier and change this line 
+Head over to your `CellView.xib` and change the root cell view background color to: #3A284C on interface builder. This is a dark color, so head over to the ViewController.swift file and change the colors. 
 
-```var normalDayColor = UIColor.black``` 
+Change: 
 
-to this line 
+1. The `UIColor.black` to `UIColor(colorWithHexValue: 0xECEAED)`
+2. The `UIColor.gray` to `UIColor(colorWithHexValue: 0x574865)`
 
-```var normalDayColor = UIColor(colorWithHexValue: 0xECEAED)```
-
- to brighten it up a bit. And change this line 
- 
- ```var weekendDayColor = UIColor.gray```
- 
-  to this 
-  
-  ```var weekendDayColor = UIColor(colorWithHexValue: 0x574865)```. 
-
-> Note: This is not the most efficient code. You do not want to be creating a new UIColor instance every time right? Cache this where necessary.
 
 Your calendar will now look like this: 
 
 <img width="309" alt="almostcompletecal" src="https://cloud.githubusercontent.com/assets/2439146/19029025/4886203a-88f7-11e6-8449-f8bdd5544120.png">
 
 
-Lets get rid of the white spaces. By default, the calendar has a cell inset of 3,3. I may change this to 0,0 if enough of you complain. Head to your ViewController.swift file and add this line of code in your viewDidLoad()
+Lets get rid of the white spaces. By default, the calendar has a cell inset of 3,3. I may change this to 0,0 if enough of you complain. In your ViewController.swift file and add this line of code in your viewDidLoad()
 
 ```swift
     override func viewDidLoad() {
@@ -246,6 +221,6 @@ Your calendar will now look like this:
 
 Tutorial over.
 
-Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality for it.
+Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality to display it. You can literally create **any** custom thing with any custom functionality. 
 
 If you're really out of ideas, using the same procedure above, why not try to create a background circular shaped SelectedView to appear when ever you tap on a date cell? You can also download the example project on Github and see the possibilities.
