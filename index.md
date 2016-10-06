@@ -11,7 +11,7 @@ The Unofficial Swift Apple Calendar Library. View. Control. for iOS & tvOS.
 ___
 
 
-## How will my calendadar dateCells look with this library?
+## How will my calendar dateCells look with this library?
 
 
 This Library is a `UICollectionView` subclass. This means your date cells will look however you want it to look. 100% customizable.
