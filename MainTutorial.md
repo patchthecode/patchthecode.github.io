@@ -14,9 +14,9 @@ JTAppleCalendar is similar to setting up a UITableView with a custom cell.
 
 There are two parts: The <b><font color="red">Cell</font></b>, and the <b><font color="green">CalendarView</font></b>
 
-##### 1. The cell
+##### 1. <font color="red">The cell</font>
 ---
-Like a UITableView, the cell also has 2 sub-parts. 
+Like a UITableView, the cell also has 2 sub-parts: a xib file, and a class. 
 
 * First let's create a new xib file. I'll call mine `CellView.xib`. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints.
 
@@ -45,7 +45,7 @@ Now let's head back to your `cellView.xib` file and make the outlet connections.
 <img width="683" alt="setupinstructions" src="https://cloud.githubusercontent.com/assets/2439146/19026812/304803d4-88df-11e6-9871-53d75b32a247.png">
 
 
-##### 2. The calendarView
+##### 2. <font color="green">The calendarView</font>
 ---
 * This step is easy. Go to your Storyboard and add a `UIView` to it. You can also setup your autolayout constrainst for the calendar view at this point.
 
@@ -56,15 +56,17 @@ Now let's head back to your `cellView.xib` file and make the outlet connections.
 **Paste this code in your ViewController class**
 
 ```swift
+import JTAppleCalendar
 class ViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
-.....
-.....
+}
 ```
 
 After pasting the above code, do not forget to now connect this outlet to the JTAppleCalendarView on storyboard.
 
-#### Whats next?
+## Whats next?
+___
+
 Similar to UITableView protocols, your ViewController has to conform to 2 protocols for it to work
 
 * JTAppleCalendarViewDataSource
