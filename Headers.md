@@ -9,7 +9,7 @@ ___
 
 You can implement headers `outside` of the calendar. These headers will not scroll with calendar-view and have nothing to do with the calendar as they are created by yourself.
 
-<img width="290" src="https://cloud.githubusercontent.com/assets/2439146/19091493/bb69bf4e-8a37-11e6-9af7-4790c3c45451.png">
+<img width="250" src="https://cloud.githubusercontent.com/assets/2439146/19091493/bb69bf4e-8a37-11e6-9af7-4790c3c45451.png">
 
 The following is an example of such a header created with 7 labels in a stack view.
 

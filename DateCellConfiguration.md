@@ -26,7 +26,7 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
 > }
 > ```
 
-This function provides you with **more than enough** information you can use to configure your cell. It provides you with the following:
+This delegate function provides you with **more than enough** information you can use to configure your cell. It provides you with the following:
 
 * **calendar** - The calendarView instance. Useful in case you have multiple calendars.
 * **cell** - The view you will be configuring.
