@@ -28,7 +28,7 @@ func calendar(_ calendar: JTAppleCalendarView,
 > }
 > ```
 >
-> Also: This function is called for every displayed cell on the calendar. Keep the code here fast and effecient.
+> Also, the `willDisplayCell` function is called for every displayed cell on the calendar. Keep the code here fast and effecient.
 
 This delegate function provides you with **more than enough** information you can use to configure your cell. It provides you with the following:
 
