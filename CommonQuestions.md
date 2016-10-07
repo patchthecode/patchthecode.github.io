@@ -62,3 +62,11 @@ calendarView.scrollToDate(myDate, triggerScrollToDateDelegate: false) {
    let currentDate = self.calendarView.currentCalendarDateSegment()
 }
 ```
+
+You can also accomplish the same as above with the following code:
+
+```swift
+calendarView.reloadData(withAnchorDate: myDate){
+    let currentDate = self.calendarView.currentCalendarDateSegment()
+}
+```
