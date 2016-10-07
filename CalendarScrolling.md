@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Blogging Like a Hacker
+layout: default
 ---
 
 ## How do you want users to scroll the calendar?
