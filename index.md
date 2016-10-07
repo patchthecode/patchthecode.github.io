@@ -27,6 +27,20 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 * Found bugs? Then [open a new issue](https://github.com/patchthecode/JTAppleCalendar/issues/new) on github
 * Feeling even more thankful? Pay for my [cup of coffee](https://salt.bountysource.com/teams/jtapplecalendar) :)
 
+## Features
+---
+
+- [x] Range selection - select dates in a range. The design is entirely up to you.
+- [x] Boundary dates - limit the calendar date range
+- [x] Week/month mode - show 1 row of weekdays. Or 2, 3 or 6
+- [x] Custom cells - make your day-cells look however you want, with any functionality you want
+- [x] Custom calendar view - make your calendar look however you want, with what ever functionality you want
+- [x] First Day of week - pick anyday to be first day of the week
+- [x] Horizontal or vertical mode
+- [x] Ability to add month headers in varying sizes/styles of your liking
+- [x] Ability to scroll to any month by simply using the date
+- [x] Ability to design your calendar [however you want.](https://github.com/patchthecode/JTAppleCalendar/issues/2) You want it, you build it
+- [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 ## Contents
 1. [Quick Tutorial](MainTutorial) - Important to understanding topics below
