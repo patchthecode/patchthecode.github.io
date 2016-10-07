@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 ## Common questions
 ___
 
