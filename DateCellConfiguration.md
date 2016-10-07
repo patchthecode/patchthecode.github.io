@@ -3,10 +3,16 @@ layout: default
 ---
 
 ## Configuring
-Configuring your dateCells is done in one delegate function.
+Generally, configuring your dateCells is done in two delegate functions.
 
 ```swift
-func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState)
+func calendar(_ calendar: JTAppleCalendarView,
+                  willDisplayCell cell: JTAppleDayCellView,
+                  date: Date, cellState: CellState)
+                  
+func calendar(_ calendar: JTAppleCalendarView,
+                  didSelectDate date: Date,
+                  cell: JTAppleDayCellView?, cellState: CellState)
 ```
 
 > IMPORTANT: Keep in mind that JTAppleCalendar is a subclass of a `UICollectionView`. Therefore, dateCells are reused. It is **important** to reset your cell completely just like you would for a `UICollectionViewCell` or a `UITableViewCell`.
