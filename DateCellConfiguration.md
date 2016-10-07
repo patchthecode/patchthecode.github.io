@@ -2,10 +2,6 @@
 layout: default
 ---
 
-## What are in-dates/out-dates?
-
-<img src="https://cloud.githubusercontent.com/assets/2439146/18330595/651b8840-750e-11e6-8727-a148d7e1720f.png" height="300" width="300">
-
 ## Configuring
 Configuring your dateCells is done in one delegate function.
 
@@ -45,6 +41,8 @@ This delegate function provides you with **more than enough** information you ca
 
 
 ## So with all this information, what can we do with dateCells?
+
+#### Although, you can configure everything about the cell, here are some major ones.
 
 ### 1. Changing the color
 
