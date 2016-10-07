@@ -22,7 +22,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 ----  |  ----  |  ----  |  ----
    |    |    | 
 
-## So this library saved you months of coding. How you can support?
+## Has this project saved you months of coding?
 * Leave a ★ Star rating on [Github](https://github.com/patchthecode/JTAppleCalendar). It's important for this project.
 * Found bugs? Then [open a new issue](https://github.com/patchthecode/JTAppleCalendar/issues/new) on github
 * Feeling even more thankful? Pay for my [cup of coffee](https://salt.bountysource.com/teams/jtapplecalendar) :)
