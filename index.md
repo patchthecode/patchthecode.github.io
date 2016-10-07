@@ -35,5 +35,5 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 4. [Range selection](RangeSelection)
 5. [Configuring dateCells](DateCellConfiguration)
 6. [Common questions](CommonQuestions)
-7. [Common errors](CommonErrors)
+7. [Common errors](CommonProblems)
 
