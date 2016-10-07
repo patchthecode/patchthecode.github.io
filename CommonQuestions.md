@@ -77,9 +77,6 @@ ___
 
 ### My calendar is lagging on device/ myViews are being randomly repeated across dateCells
 
-## 9
-### My calendar is lagging on device/ myViews are being randomly repeated across dateCells
-
 Keep in mind that JTAppleCalendar is like a `UITableView`. The function:
 
 ```swift
