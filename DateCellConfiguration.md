@@ -9,7 +9,7 @@ Configuring your dateCells is done in one delegate function.
 func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState)
 ```
 
-> IMPORTANT: Keep in mind that JTAppleCalendar is a subclass of a `UICollectionView`. Therefore, dateCells are reused. It is **important** to reset your cell completely just like you would for a `UICollectionViewCell` or a `UITableViewCell`. 
+> IMPORTANT: Keep in mind that JTAppleCalendar is a subclass of a `UICollectionView`. Therefore, dateCells are reused. It is **important** to reset your cell completely just like you would for a `UICollectionViewCell` or a `UITableViewCell`.
 > 
 > ```swift
 > // For instance, it is not enough to only have the first if clause:
@@ -21,6 +21,8 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
 >    configureCellViewInThatOtherWay()
 > }
 > ```
+>
+> Also: This function is called for every displayed cell on the calendar. Keep the code here fast and effecient.
 
 This delegate function provides you with **more than enough** information you can use to configure your cell. It provides you with the following:
 
