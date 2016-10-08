@@ -43,11 +43,12 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 ## Contents
-1. [Quick Tutorial](MainTutorial) - Important to understanding topics below
-2. [Creating headers](Headers)
-3. [Calendar scrolling](CalendarScrolling)
-4. [Range selection](RangeSelection)
-5. [Configuring dateCells](DateCellConfiguration)
-6. [Common questions](CommonQuestions)
-7. [Common errors](CommonProblems)
+1. [Installation](Installation)
+2. [Quick tutorial](MainTutorial) - Important to understanding topics below
+3. [Configuring dateCells](DateCellConfiguration)
+4. [Calendar scrolling](CalendarScrolling)
+5. [Range selection](RangeSelection)
+6. [Creating headers](Headers)
+7. [Common questions](CommonQuestions)
+8. [Common errors](CommonProblems)
 
