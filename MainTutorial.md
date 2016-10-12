@@ -97,7 +97,7 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
                                                  endDate: endDate,
                                                  numberOfRows: 6,
                                                  calendar: calendar,
-                                                 generateInDates: true,
+                                                 generateInDates: .forAllMonths,
                                                  generateOutDates: .tillEndOfGrid,
                                                  firstDayOfWeek: .sunday)
         return parameters
