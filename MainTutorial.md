@@ -194,8 +194,8 @@ Head over to your `CellView.xib` and change the root cell view background color 
 
 Change: 
 
-1. The `UIColor.black` to `UIColor(colorWithHexValue: 0xECEAED)`
-2. The `UIColor.gray` to `UIColor(colorWithHexValue: 0x574865)`
+1. The **UIColor.black** to **UIColor(colorWithHexValue: 0xECEAED)**
+2. The **UIColor.gray** to **UIColor(colorWithHexValue: 0x574865)**
 
 
 Your calendar will now look like this: 
