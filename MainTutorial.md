@@ -102,6 +102,7 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
                                                  firstDayOfWeek: .sunday)
         return parameters
     }
+}
 ```
 
 - **Start boundary date**: date calendar will start from
