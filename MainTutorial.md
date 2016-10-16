@@ -91,8 +91,9 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
         
         let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
         let endDate = Date()                                // You can also use dates created from this function
-        let calendar = Calendar.current                     // Make sure you set this up to your time zone. We'll just use default here       
-
+        let calendar = Calendar.current                     
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)! 
+        
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
                                                  numberOfRows: 6,
