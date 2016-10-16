@@ -25,7 +25,7 @@ Go to your `CellView.Swift` file and add the following variable so that you can 
 
 **Paste the following code to your `CellView.swift` file**
 
-```
+```swift
 @IBOutlet var selectedView: UIView!
 ```
 
@@ -36,7 +36,7 @@ ___
 
 In your `ViewController.swift` file, paste the following code in your extension.
 
-```
+```swift
 func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     let myCustomCell = cell as! CellView
     
@@ -51,7 +51,7 @@ func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: J
 
 This code handles the selection. Now **paste the following code to handle the deselection**
 
-```
+```swift
 func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     let myCustomCell = cell as! CellView
     myCustomCell.selectedView.isHidden = true
