@@ -44,7 +44,9 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 
 ## Contents
 1. [Installation](Installation)
-2. [Quick tutorial](MainTutorial) - Important to understanding topics below
+2. Quick Tutorial - Important to understanding topics below
+   1. [Part 1](MainTutorial) - Basic concepts
+   2. [Part 2](MainTutorial2) - Setting up selection
 3. [Configuring dateCells](DateCellConfiguration)
 4. [Calendar scrolling](CalendarScrolling)
 5. [Range selection](RangeSelection)
