@@ -90,14 +90,10 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
         formatter.dateFormat = "yyyy MM dd"
         
         let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
-        let endDate = Date()                                // You can also use dates created from this function
-        let calendar = Calendar.current                     
-        calendar.timeZone = TimeZone(secondsFromGMT: 0)! 
-        
+        let endDate = Date()                                // You can also use dates created from this function        
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
                                                  numberOfRows: 6,
-                                                 calendar: calendar,
                                                  generateInDates: .forAllMonths,
                                                  generateOutDates: .tillEndOfGrid,
                                                  firstDayOfWeek: .sunday)
@@ -109,7 +105,6 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
 - **Start boundary date**: date calendar will start from
 - **End boundary date**: date calendar will end
 - **Rows per month**: The number of rows per month you want displayed
-- **A Calendar() instance**: which you should configure to your desired time zone. Please configure this properly
 - **In-dates**: Generate in dates
 - **Out-Dates**: Generate out dates
 - **First day of week**: Determine which is the first day of the week to start with 
