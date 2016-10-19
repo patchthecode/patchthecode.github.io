@@ -94,6 +94,7 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
                                                  numberOfRows: 6,
+                                                 calendar: Calendar(identifier: .gregorian) // This parameter will be removed in version 6.0.1
                                                  generateInDates: .forAllMonths,
                                                  generateOutDates: .tillEndOfGrid,
                                                  firstDayOfWeek: .sunday)
