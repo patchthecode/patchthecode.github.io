@@ -20,11 +20,25 @@ Like a UITableView, the cell also has 2 sub-parts: a xib file, and a class.
 
 * First let's create a new xib file. I'll call mine `CellView.xib`. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints.
 
+Click on (XCode 8) File -> New -> File -> View
+
+ <img width="550" alt="screen shot 2016-10-04 at 2 52 19 pm" src="https://cloud.githubusercontent.com/assets/2439146/19093972/6f6eeda2-8a42-11e6-8f78-7f8f45dbfe7b.png">
+ 
+Let's save this as `CellView.xib`. 
+
+Your view may look very large, so to make it smaller, click on the View -> then attributes inspector, and change the size to `freeform` as shown in the image below. Then adjust the size to something smaller
+
+<img width="660" src="https://cloud.githubusercontent.com/assets/2439146/19748042/430e767a-9b94-11e6-8d04-c52bd361cb22.png">
+
+
+
+Drag a `UILabel` unto the view. And then center it using autolayout constraints.
+
 <img width="201" alt="cellxib" src="https://cloud.githubusercontent.com/assets/2439146/19026781/c3793318-88de-11e6-8727-04b773b3700c.png">
 
 
 
-* Second , create a class for the xib. The new class must be a subclass of `JTAppleDayCellView`. I called mine `CellView.swift`.  
+* Second , create a class for the xib. The new class must be a subclass of `JTAppleDayCellView`. I created a new file for my class and called it `CellView.swift`.  
 
 **Paste the following code inside your new class.**
 
