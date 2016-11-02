@@ -23,10 +23,13 @@ func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: J
    let myCustomCell = cell as! CellView // You created the cell view if you followed the tutorial
    switch cellState.selectedPosition() {
         case .full, .left, .right:
+            myCustomCell.selectedView.isHidden = false
             myCustomCell.selectedView.backgroundColor = UIColor.yellow // Or you can put what ever you like for your rounded corners, and your stand-alone selected cell
         case .middle:
+            myCustomCell.selectedView.isHidden = false
             myCustomCell.selectedView.backgroundColor = UIColor.blue // Or what ever you want for your dates that land in the middle
         default:
+            myCustomCell.selectedView.isHidden = true
             myCustomCell.selectedView.backgroundColor = nil // Have no selection when a cell is not selected
    }
 }
@@ -38,7 +41,7 @@ This code also has to be placed the following 2 other delegate functions. Please
 func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
     // Place code here
 }
-func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
+func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     // Place code here
 }
 ```
