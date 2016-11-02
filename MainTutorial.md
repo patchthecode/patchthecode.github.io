@@ -104,11 +104,11 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
         formatter.dateFormat = "yyyy MM dd"
         
         let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
-        let endDate = Date()                                // You can also use dates created from this function        
+        let endDate = Date()                                // You can also use dates created from this function
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
                                                  numberOfRows: 6,
-                                                 calendar: Calendar.current
+                                                 calendar: Calendar.current,
                                                  generateInDates: .forAllMonths,
                                                  generateOutDates: .tillEndOfGrid,
                                                  firstDayOfWeek: .sunday)
