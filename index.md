@@ -6,7 +6,7 @@ layout: default
 
 The Unofficial Swift Apple Calendar Library. View. Control. for iOS & tvOS.
 
-[![Version](https://img.shields.io/cocoapods/v/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![License](https://img.shields.io/cocoapods/l/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_74x21.png)](https://salt.bountysource.com/teams/jtapplecalendar)
+[![Version](https://img.shields.io/cocoapods/v/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![License](https://img.shields.io/cocoapods/l/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_74x21.png)](https://github.com/patchthecode/JTAppleCalendar/wiki/Support)
 
 ___
 
@@ -25,7 +25,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 ## Has this project saved you months of coding?
 * Leave a ★ Star rating on [Github](https://github.com/patchthecode/JTAppleCalendar). It's important for this project.
 * Found bugs? Then [open a new issue](https://github.com/patchthecode/JTAppleCalendar/issues/new) on github
-* Feeling even more thankful? Pay for my [cup of coffee](https://salt.bountysource.com/teams/jtapplecalendar) :)
+* Feeling even more thankful? Pay for my [cup of coffee](https://github.com/patchthecode/JTAppleCalendar/wiki/Support) :)
 
 ## Features
 ---
