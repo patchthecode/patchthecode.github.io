@@ -85,6 +85,12 @@ func calendar(_ calendar: JTAppleCalendarView,
                   date: Date, cellState: CellState)
 ```
 
-will be called for every dateCell displayed just like a UITableView `cellForRowAtIndexPath` function. You are required to setup things in this function **fast**. Do not put loops in there or other time consuming tasks that you would not put in a UITableView's `cellForRowAtIndexPath` method. This function should exit fast. This should cure your lagging issue. I have tested this calendar with an old iPhone 4s, and all was well. Treat this function exactly like you would treat a UITableview's `cellForRowAtIndexPath` function.
+will be called for every dateCell displayed just like a UITableView `cellForRowAtIndexPath` function. You are required to setup things in this function **fast**. 
+
+Do not put time consuming tasks that you would not put in a UITableView's `cellForRowAtIndexPath` method. This function should exit fast. This should cure your lagging issue. I have tested this calendar with an old iPhone 4s, and all was well. Treat this function exactly like you would treat a UITableview's `cellForRowAtIndexPath` function.
+
+If a time consuming task cannot be avoided, then do what good coders do; Put the heavy tasks on a background thread, and then return to the main thread to update your cellView when the task is complete 👍.
+
+
 
 To cure your random repeating views -> If you have ever done a UITableView before, then inside the `cellForRowAtIndexPath` function, you have to reset the cell before it is used right? You will have to remove that circle you have added, or that color you have added. Reset the old text you put earlier, change that image you created etc etc. Therefore you have to do the same thing in your `willDisplayCell ` function. 
