@@ -77,3 +77,38 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
 
 Complete.
 
+
+## Two-Tap range selection
+___
+
+Your calendar design might include a range selection that behaves like this:
+
+1. User taps first date
+2. User taps second date
+3. Your App shoud now select a range of dates from the start date to the end date.
+
+You can accomplish this is what ever way you wish, but here is a rough example.
+
+```swift
+var firstDate: Date?
+
+func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
+    if firstDate != nil {
+       // This code below would be an infinite loop. And why?
+       // Have you taken a look at the selectDate function?
+       // By default it triggers this delegate function again.
+       // This will cause an infinite loop.
+       calendarView.selectDates(from: firstDate! to: secondDate)
+       
+       // The correct code you should do is this.
+       // It will therefore not call this delegate.
+       // The last parameter forces selection to yes.
+       // If you leave out the final parameter, then the first
+       // and last date will be deselected, because the user has
+       // already selected them.
+       selectDates(from: firstDate!, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
+    } else {
+       firstDate = date
+    }
+}
+```
