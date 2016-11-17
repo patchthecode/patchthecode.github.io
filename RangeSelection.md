@@ -106,7 +106,7 @@ func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell:
        // If you leave out the final parameter, then the first
        // and last date will be deselected, because the user has
        // already selected them.
-       selectDates(from: firstDate!, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
+       calendarView.selectDates(from: firstDate!, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
     } else {
        firstDate = date
     }
