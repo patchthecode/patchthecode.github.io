@@ -81,7 +81,7 @@ Complete.
 ## Two-Tap range selection
 ___
 
-Your calendar design might include a range selection that behaves like this:
+But what if your calendar has a range selection design that behaves like this?
 
 1. User taps first date
 2. User taps second date
