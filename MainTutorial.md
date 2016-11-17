@@ -233,7 +233,7 @@ Your calendar will now look like this:
 <img width="311" alt="completecal" src="https://cloud.githubusercontent.com/assets/2439146/19029087/ad30b7ac-88f7-11e6-9ae5-b9d0ac5c837b.png">
 
 
-**Complete**. Jump over to [Part 2](MainTutorial2) of this tutorial.
+**Complete**. Jump over to [Part 2](https://patchthecode.github.io/MainTutorial2) of this tutorial.
 
 Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality to display it. You can literally create **any** custom thing with any custom functionality. 
 
