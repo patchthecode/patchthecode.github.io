@@ -85,7 +85,7 @@ But what if your calendar has a range selection design that behaves like this?
 
 1. User taps first date
 2. User taps second date
-3. Your App shoud now select a range of dates from the start date to the end date.
+3. Your App should now select a range of dates from the start date to the end date.
 
 You can accomplish this is what ever way you wish, but here is a rough example.
 
