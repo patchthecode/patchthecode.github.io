@@ -92,7 +92,7 @@ You can accomplish this is what ever way you wish, but here is a rough example.
 ```swift
 var firstDate: Date?
 
-func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
+func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     if firstDate != nil {
        // This code below would be an infinite loop. And why?
        // Have you taken a look at the selectDate function?
