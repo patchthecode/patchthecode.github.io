@@ -94,18 +94,6 @@ var firstDate: Date?
 
 func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     if firstDate != nil {
-       // This code below would be an infinite loop. And why?
-       // Have you taken a look at the selectDate function?
-       // By default it triggers this delegate function again.
-       // This will cause an infinite loop.
-       calendarView.selectDates(from: firstDate! to: secondDate)
-       
-       // The correct code you should do is this.
-       // It will therefore not call this delegate.
-       // The last parameter forces selection to yes.
-       // If you leave out the final parameter, then the first
-       // and last date will be deselected, because the user has
-       // already selected them.
        calendarView.selectDates(from: firstDate!, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
     } else {
        firstDate = date
