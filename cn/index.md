@@ -42,17 +42,17 @@ ___
 - [x] [将日历设计为完全按照您的需要](https://github.com/patchthecode/JTAppleCalendar/issues/2) 建立你的方式
 - [x] [完整的文档](http://cocoadocs.org/docsets/JTAppleCalendar)
 
-## Contents
-1. [Installation](Installation)
-2. Quick Tutorial - Important to understanding topics below
-   1. [Part 1](MainTutorial) - Basic concepts
-   2. [Part 2](MainTutorial2) - Setting up selection
-3. DateCells
-	1. [Configuring](DateCellConfiguration)
-	2. [Adding Gestures](AddingGestures)
-4. [Calendar scrolling](CalendarScrolling)
-5. [Range selection](RangeSelection)
-6. [Creating headers](Headers)
-7. [Common questions](CommonQuestions)
-8. [Common errors](CommonProblems)
+## 目录
+1. [安装](Installation)
+2. 快速教程 - 这对理解其他主题很重要
+   1. [第1部分](MainTutorial) - 基本概念
+   2. [第2部分](MainTutorial2) - 如何设置选择
+3. 日期
+	1. [配置](DateCellConfiguration)
+	2. [添加手势](AddingGestures)
+4. [日历滚动](CalendarScrolling)
+5. [范围选择](RangeSelection)
+6. [如何创建横幅](Headers)
+7. [常见问题](CommonQuestions)
+8. [常见错误](CommonProblems)
 
