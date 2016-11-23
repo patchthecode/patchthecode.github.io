@@ -100,4 +100,4 @@ If a time consuming task cannot be avoided, then do what good coders do; Put the
 
 Let's assume you have a 6-row calendar (42 cells total). Let's assume you have a loop in your `willDisplayCell` function which loops through 100 items. Your loop will run for 42 * 100 = 4200 times! Think through your design. Be a good developer :)
 
-Also, please note that when working with dates, you may need to use the `DateFormatter()` instance. `DateFormatter` is notoriously slow to initialize. Please initialize this only once (if you can) and what ever you do, do not initialize it in the `willDisplayCell` function.
+Also, please note that when working with dates, you may need to use the `DateFormatter()` instance. `DateFormatter` is notoriously slow to initialize. Please initialize this only once (if you can) and what ever you do, do not create a new instance in the `willDisplayCell` function.
