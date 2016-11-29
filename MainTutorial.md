@@ -32,7 +32,7 @@ Your view may look very large, so to make it smaller, click on the View -> then 
 
 
 
-Drag a `UILabel` unto the view. And then center it using autolayout constraints.
+Drag a `UILabel` unto the view. And then position it using autolayout constraints. If you forget to use autolayout constraints, then your cell will not display properly.
 
 <img width="201" alt="cellxib" src="https://cloud.githubusercontent.com/assets/2439146/19026781/c3793318-88de-11e6-8727-04b773b3700c.png">
 
