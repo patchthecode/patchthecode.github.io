@@ -235,6 +235,11 @@ Your calendar will now look like this:
 
 **Complete**. Jump over to [Part 2](https://patchthecode.github.io/MainTutorial2) of this tutorial.
 
+If your display does not look like this then:
+
+1. Did you remember to set autolayout constraints?
+2. Is your view shifted off the screen? [Look at a solution here](https://patchthecode.github.io/CommonProblems/).
+
 Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality to display it. You can literally create **any** custom thing with any custom functionality. 
 
 If you're really out of ideas, using the same procedure above, why not try to create a background circular shaped SelectedView to appear when ever you tap on a date cell? You can also download the example project on Github and see the possibilities.
