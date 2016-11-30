@@ -42,9 +42,6 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] Ability to design your calendar [however you want.](https://github.com/patchthecode/JTAppleCalendar/issues/2) You want it, you build it
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
-___
-<font color="red">NOTICE: I'm looking for someone who can help me translate this documentation into Chinese. If you meet this requirement and are willing to help, then contact me at patchthecode@gmail.com. I have already started but I do not think google translate is the best: [First Attempt](https://patchthecode.github.io/cn)</font>
-___
 
 ## Contents
 1. [Installation](Installation)
