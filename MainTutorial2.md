@@ -83,6 +83,7 @@ let dimPurple = UIColor(colorWithHexValue: 0x574865)
 ```swift
 // Function to handle the text color of the calendar
 func handleCellTextColor(view: JTAppleDayCellView?, cellState: CellState) {
+
 	guard let myCustomCell = view as? CellView  else {
 	    return
 	}
