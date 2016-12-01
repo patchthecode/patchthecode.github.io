@@ -139,4 +139,4 @@ func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell:
 
 Selection should now be complete.
 
-Loving this calendar so far? Don't forget to leave a star ★ rating on -> [Github](https://github.com/patchthecode/JTAppleCalendar). It is really appreciated for free-lancers like myself.
+Loving this calendar so far? Don't forget to leave a star ★ rating on -> [Github](https://github.com/patchthecode/JTAppleCalendar). For a free-lance coder like my self, ratings is one of the few ways to get recognition. Cheers.
