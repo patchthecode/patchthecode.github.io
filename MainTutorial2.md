@@ -85,7 +85,7 @@ let dimPurple = UIColor(colorWithHexValue: 0x574865)
 func handleCellTextColor(view: JTAppleDayCellView?, cellState: CellState) {
 
 	guard let myCustomCell = view as? CellView  else {
-	    return
+		return
 	}
     
     if cellState.isSelected {
@@ -139,3 +139,4 @@ func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell:
 
 Selection should now be complete.
 
+Loving this calendar so far? Don't forget to leave a [star ★ rating on Github](https://github.com/patchthecode/JTAppleCalendar). It's really appreciated for free-lancers.
