@@ -66,12 +66,39 @@ Why is this?
 
 Therefore, you will also need code in your **willDisplayCell** delegate function to determine when to show and hide the `selectedView` once your calendar is scrolled.
 
-To avoid code repetition, let's create a function to handle the showing/hiding of the selectedView.
+To avoid code repetition, let's create a function to handle the showing/hiding of the selectedView. We'll also create a function to handle the text color so that it changes color when ever you select the calendar.
 
-
-**Paste the following code in your viewController extension**:
+**Paste the following code in your viewController class**:
 
 ```swift
+// We cache our colors because we do not want to be creating
+// a new color every time a cell is displayed. We do not want a laggy
+// scrolling calendar.
+
+let white = UIColor(colorWithHexValue: 0xECEAED)
+let darkPurple = UIColor(colorWithHexValue: 0x3A284C)
+let dimPurple = UIColor(colorWithHexValue: 0x574865)
+```
+
+```swift
+// Function to handle the text color of the calendar
+func handleCellTextColor(view: JTAppleDayCellView?, cellState: CellState) {
+	guard let myCustomCell = view as? CellView  else {
+	    return
+	}
+    
+    if cellState.isSelected {
+        myCustomCell.dayLabel.textColor = darkPurple
+    } else {
+        if cellState.dateBelongsTo == .thisMonth {
+            myCustomCell.dayLabel.textColor = white
+        } else {
+            myCustomCell.dayLabel.textColor = dimPurple
+        }
+    }
+}
+
+// Function to handle the calendar selection
 func handleCellSelection(view: JTAppleDayCellView?, cellState: CellState) {
     guard let myCustomCell = view as? CellView  else {
         return
@@ -85,7 +112,7 @@ func handleCellSelection(view: JTAppleDayCellView?, cellState: CellState) {
 }
 ```
 
-Finally, these 3 function's code should be modified to the following:
+Finally, these 3 function's code should be **changed** to the following:
 
 ```swift
 func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
@@ -94,22 +121,18 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
     // Setup Cell text
     myCustomCell.dayLabel.text = cellState.text
     
-    // Setup text color
-    if cellState.dateBelongsTo == .thisMonth {
-        myCustomCell.dayLabel.textColor = UIColor(colorWithHexValue: 0xECEAED)
-    } else {
-        myCustomCell.dayLabel.textColor = UIColor(colorWithHexValue: 0x574865)
-    }
-    
+    handleCellTextColor(view: cell, cellState: cellState)
     handleCellSelection(view: cell, cellState: cellState)
 }
 
 func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     handleCellSelection(view: cell, cellState: cellState)
+    handleCellTextColor(view: cell, cellState: cellState)
 }
 
 func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
     handleCellSelection(view: cell, cellState: cellState)
+    handleCellTextColor(view: cell, cellState: cellState)
 }
 ```
 
