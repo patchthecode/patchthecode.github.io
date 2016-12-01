@@ -24,5 +24,3 @@ func didDoubleTapCollectionView(gesture: UITapGestureRecognizer) {
 ```
 
 Complete! 
-
-Love this project? Support by leaving a Start rating on github.
