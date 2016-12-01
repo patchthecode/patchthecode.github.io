@@ -10,5 +10,5 @@ layout: default
 
 
 
-Want to get added to this list? Help promote the calendar on your web-link and you will be.
+Become a supporter. Help promote/spread the word about the calendar on your web-link and you will be added to the list.
 
