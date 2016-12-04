@@ -15,7 +15,9 @@ It's time to add some more functionality.
 
 We want to add a yellow-colored `selectedView` to the calendar that will appear whenever you tap on a dateCell.
 
-Head to your `CellView.xib` file and drag a new `UIView` unto the canvas. Make sure the newly-dragged view is **above** the Day Label view. Why? Because we want the selectedView to display behind the DayLabel.
+Head to your `CellView.xib` file and drag a new `UIView` unto the canvas. Make sure the newly-dragged view is **above** the Day Label view. Why? Because we want the selectedView to display behind the DayLabel. 
+
+On the image below, you will see that the `View` is first on the hierarchy sitting **above** the `Day Label`.
 
 <img width="424" src="https://cloud.githubusercontent.com/assets/2439146/19415251/bafe16ea-931f-11e6-9fd7-6837fc932cc4.png">
 
