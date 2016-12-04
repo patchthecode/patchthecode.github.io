@@ -93,3 +93,14 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
 }
 ```
 
+Cells can also be made un-selectable by using the delegate function. The following code has the same effect as the code above and would be my first preference.
+
+```swift
+func calendar(_ calendar: JTAppleCalendarView, canSelectDate date: Date, cell: JTAppleDayCellView, cellState: CellState) -> Bool {
+    if cellState.dateBelongsTo == .thisMonth {
+        return true
+    } else {
+        return false
+    }
+}
+```
