@@ -57,8 +57,7 @@ target 'test' do
 end
 ```
 	
-Save, and head back to terminal and run: **pod install**
-If all Went well, installation should be complete. Close the XCodeproject, and instead reopen it using the **workspace** file which generated when installation was completed. Done.
+Save, and head back to terminal and run: **pod install**.  If all Went well, installation should be complete. Close the XCodeproject, and instead reopen it using the **workspace** file which generated when installation was completed. Done.
 
 ### 2. Installing via Carthage
 
