@@ -46,18 +46,19 @@ If youre new to CocoaPods, simply do search on how to integrate cocoapods into y
 5. This will create a file called: **Podfile** in that same location.
 6. Edit that **Podfile** so that it looks like the following:
 
-	```bash
-	# Uncomment the next line to define a global platform for your project
-	# platform :ios, '9.0'
 
-	target 'test' do
-	  use_frameworks!
-	  pod 'JTAppleCalendar', '~> 6.0'
-	end
-	```
+```bash
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'test' do
+  use_frameworks!
+  pod 'JTAppleCalendar', '~> 6.0'
+end
+```
 	
-7. Save, and head back to terminal and run: **pod install**
-8. If all Went well, installation should be complete. Close the XCodeproject, and instead reopen it using the **workspace** file which generated when installation was completed. Done.
+Save, and head back to terminal and run: **pod install**
+If all Went well, installation should be complete. Close the XCodeproject, and instead reopen it using the **workspace** file which generated when installation was completed. Done.
 
 ### 2. Installing via Carthage
 
