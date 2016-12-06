@@ -46,7 +46,7 @@ Below are the full parameter set together with their defaults.
 let parameters = ConfigurationParameters(
     startDate: startDate,  // This is manditory and must be supplied by you
     endDate: endDate,      // This is manditory and must be supplied by you
-    numberOfRows: 6,
+    numberOfRows: 6,                       // Default
     calendar: Calendar.current,            // Default
     generateInDates:  .forFirstMonthOnly,  // Default
     generateOutDates: .tillEndOfGrid,      // Default
@@ -89,8 +89,8 @@ One mistake many users make when making a single row calendar is to set it up li
 
 ```swift
 let parameters = ConfigurationParameters(
-    startDate: startDate,  // This is manditory and must be supplied by you
-    endDate: endDate,      // This is manditory and must be supplied by you
+    startDate: startDate,  
+    endDate: endDate,      
     numberOfRows: 1,
     calendar: Calendar.current,
     generateInDates:  .forFirstMonthOnly,
@@ -115,8 +115,8 @@ Still wanting to make some weird calendar no one has ever seen? There is one mor
 
 ```swift
 let parameters = ConfigurationParameters(
-    startDate: startDate,  // This is manditory and must be supplied by you
-    endDate: endDate,      // This is manditory and must be supplied by you
+    startDate: startDate, 
+    endDate: endDate,     
     numberOfRows: 6,
     calendar: Calendar.current,
     generateInDates:  .forFirstMonthOnly,
