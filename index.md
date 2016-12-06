@@ -51,9 +51,11 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 3. DateCells
 	1. [Configuring](DateCellConfiguration)
 	2. [Adding Gestures](AddingGestures)
-4. [Calendar scrolling](CalendarScrolling)
-5. [Range selection](RangeSelection)
-6. [Creating headers](Headers)
+	3. [Range selection](RangeSelection)
+4. Calendar
+	1. [Calendar scrolling](CalendarScrolling)
+	2. [Creating headers](Headers)
+	3. [Calendar layout](CalendarLayout)
 7. [Common questions](CommonQuestions)
 8. [Common errors](CommonProblems)
 
