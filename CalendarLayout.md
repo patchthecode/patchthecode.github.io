@@ -69,7 +69,7 @@ They can be set to:
 2. **tillEndOfGrid** - This will generate outDates until it reaches the end of a **6 x 7** grid (42 cells). In Short, it will always display a 6 row calendar month.
 3. **off** - Your calendar month will not generate any outDates.
 
-### 2. firstDayOfWeek
+### 3. firstDayOfWeek
 You can change your calendar to start at a different day of the week.
 
 Typical calendar headers look like this:
@@ -84,7 +84,7 @@ But with this parameter, you can change any day to be the first. For example:
 Sat | Sun | Mon | Tue | Wed | Thu | Fri
 ```
 
-### A common single row calendar mistake
+## A common single row calendar mistake
 One mistake many users make when making a single row calendar is to set it up like this:
 
 ```swift
