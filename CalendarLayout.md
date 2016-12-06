@@ -34,7 +34,7 @@ If you do not want any offsetting, then you can choose to not have them generate
 
 Keep in mind that you can have them generated, but choose to have them invisible as shown below:
 
-<img alt="image" width="350" src="https://s14.postimg.org/e338qnihd/6row.png">
+<img alt="image" width="350" src="https://cloud.githubusercontent.com/assets/2439146/20913019/180f06c4-bb29-11e6-89b8-a474a841c85f.png">
 
 
 
