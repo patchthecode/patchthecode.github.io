@@ -67,6 +67,48 @@ func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayC
 }
 ```
 
+A popular thing developers do, is change the background/color for `today's date`. If you plan on doing this, keep in mind your code should not look like this:
+
+```swift
+if cellSate.date == date {
+   // Configure my cell's background this way
+} else {
+   // Configure my cell's background that way
+}
+```
+
+your code should instead look like this:
+
+```swift
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "yyy MM dd" // or whatever format you want.
+
+let currentDateString = dateFormatter.string(from: Date())
+let cellStateDateString = dateFormatter.string(from: cellState.date)
+
+if  currentDateString ==  cellStateDateString {
+   // Configure my cell's background this way
+} else {
+   // Configure my cell's background that way
+}
+```
+
+We compare the strings instead of the actual `Date()` instances becase Date() instances have a time stamp attached to them; And most of the times, they are different.
+
+keep in mind, however, do not create
+
+```swift
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "yyy MM dd"
+```
+
+Inside of your calendar functions.
+And why? because `DateFormatter()` is an expensive class.
+
+If you put it inside the `willDisplayCell()` which may get called 42 times,
+it will be instanciated many times
+thereby causing you to have an extremy laggy calendar. Be a good coder. Put heavy classes like this in proper places where they are instanciated only once if possible. 
+
 ### 2. Making cells invisible
 
 ```swift
