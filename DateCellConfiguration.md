@@ -77,7 +77,7 @@ if cellSate.date == date {
 }
 ```
 
-your code should instead look like this:
+your code can instead look like this:
 
 ```swift
 let dateFormatter = DateFormatter()
@@ -87,9 +87,17 @@ let currentDateString = dateFormatter.string(from: Date())
 let cellStateDateString = dateFormatter.string(from: cellState.date)
 
 if  currentDateString ==  cellStateDateString {
-   // Configure my cell's background this way
+   // this
 } else {
-   // Configure my cell's background that way
+   // that
+}
+
+// or you can use the Calendar() instance you supplied to the configure method
+
+if testCalendar.isDateInToday(date) {
+    // this
+} else {
+    // that
 }
 ```
 
