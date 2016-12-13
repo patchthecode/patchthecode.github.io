@@ -77,7 +77,7 @@ if cellSate.date == date {
 }
 ```
 
-your code can instead look like this:
+your code should instead look like this:
 
 ```swift
 let dateFormatter = DateFormatter()
