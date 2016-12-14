@@ -61,7 +61,7 @@ calendarView.scrollToDate(myDate, triggerScrollToDateDelegate: false)
 //3. After we reload, we may want to scroll to a date and run some code when scrolling completes.
 //   If code needs to be run after the scrolling, it must be placed in the trailing closure
 calendarView.scrollToDate(myDate, triggerScrollToDateDelegate: false) {
-   let currentDate = self.calendarView.currentCalendarDateSegment()
+   let visibleDates = self.calendarView.visibleDates()
 }
 ```
 
@@ -69,8 +69,16 @@ You can also accomplish the same as above with the following code:
 
 ```swift
 calendarView.reloadData(withAnchorDate: myDate){
-    let currentDate = self.calendarView.currentCalendarDateSegment()
+   let visibleDates = self.calendarView.visibleDates()
 }
+```
+
+Note: If you are trying to get the `visibleDates()` from the `viewDidLoad()` function then please use the block version
+
+```swift
+calendarView.visibleDates({ (visibleDates: DateSegmentInfo) in
+   print(visibleDates)
+})
 ```
 
 ## 4
