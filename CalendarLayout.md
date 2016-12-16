@@ -48,7 +48,7 @@ let parameters = ConfigurationParameters(
     endDate: endDate,      // This is manditory and must be supplied by you
     numberOfRows: 6,                       // Default
     calendar: Calendar.current,            // Default
-    generateInDates:  .forFirstMonthOnly,  // Default
+    generateInDates:  .forAllMonths,       // Default
     generateOutDates: .tillEndOfGrid,      // Default
     firstDayOfWeek:   .sunday              // Default
 )
