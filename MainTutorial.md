@@ -63,7 +63,7 @@ Now let's head back to your `cellView.xib` file and make the outlet connections.
 ---
 * This step is easy. Go to your Storyboard and add a `UIView` to it. You can also setup your autolayout constrainst for the calendar view at this point.
 
-  Then, using the same procedure like you did above for the `CellView.xib` diagram above, Set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
+  Then, using the very same procedure like you did for the `CellView.xib` diagram above (which shows the 3 steps in red color), set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
   
   If you haven't created your ViewController class yet, do so now. I have called my viewController class simply `ViewController`.
 
