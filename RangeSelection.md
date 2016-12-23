@@ -110,6 +110,19 @@ If you want your users to select dates in a fluid motion or using any other kind
 
 You can code this any way you wish. Here is my rough sample code:
 
+In your `viewDidLoad()` setup your gesture however you wish.
+
+```swift
+override func viewDidLoad() {
+	calendarView.allowsMultipleSelection = true
+	let panGensture = UILongPressGestureRecognizer(target: self, action: #selector(didStartRangeSelecting(gesture:)))
+	panGensture.minimumPressDuration = 0.5
+	calendarView.addGestureRecognizer(panGensture)
+	calendarView.rangeSelectionWillBeUsed = true 
+}
+```
+Then create the function to be executed
+
 ```swift
 var rangeSelectedDates: [Date] = []
 func didStartRangeSelecting(gesture: UILongPressGestureRecognizer) {
@@ -137,13 +150,5 @@ func didStartRangeSelecting(gesture: UILongPressGestureRecognizer) {
     if gesture.state == .ended {
         rangeSelectedDates.removeAll()
     }
-}
-
-override func viewDidLoad() {
-	calendarView.allowsMultipleSelection = true
-	let panGensture = UILongPressGestureRecognizer(target: self, action: #selector(didStartRangeSelecting(gesture:)))
-	panGensture.minimumPressDuration = 0.5
-	calendarView.addGestureRecognizer(panGensture)
-	calendarView.rangeSelectionWillBeUsed = true 
 }
 ```
