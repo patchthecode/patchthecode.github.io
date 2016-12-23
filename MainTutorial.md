@@ -173,6 +173,11 @@ Well if you followed this tutorial exactly, then your calendar should look like 
 
 <img width="219" alt="unimpressivecal" src="https://cloud.githubusercontent.com/assets/2439146/19028818/28033c46-88f5-11e6-8a25-fa6fc8651018.png">
 
+If your display does not look like this then:
+
+1. Did you remember to set autolayout constraints?
+2. Is your view shifted off the screen? [Look at a solution here](https://patchthecode.github.io/CommonProblems/). Shifting often occurs if you put your calendar inside of a `UINavigationController`.
+
 
 Pretty unimpressive... :/ 
 Since I am not that great of a designer yet, I will copy what one of the users of this framework has done with this calendar control [here](https://github.com/patchthecode/JTAppleCalendar/issues/2). Click on that link and scroll down till you see the purple calendar. That's the one we'll attempt to make.
@@ -234,11 +239,6 @@ Your calendar will now look like this:
 
 
 **Complete**. Jump over to [Part 2](https://patchthecode.github.io/MainTutorial2) of this tutorial.
-
-If your display does not look like this then:
-
-1. Did you remember to set autolayout constraints?
-2. Is your view shifted off the screen? [Look at a solution here](https://patchthecode.github.io/CommonProblems/).
 
 Create all the other views on your xib that you need. Event-dots view, customWhatEverView etc. After designing the views on your xib, go create the functionality for it just like you did in the example above; where you created a `UILabel` and added the functionality to display it. You can literally create **any** custom thing with any custom functionality. 
 
