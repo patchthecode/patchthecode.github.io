@@ -100,3 +100,50 @@ func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: J
     }
 }
 ```
+
+## Continuous range selection
+___
+
+If you want your users to select dates in a fluid motion or using any other kind of gestures, then you will need to [add gestures to your calendar](AddingGestures). Here is an example adding long-press gesture.
+
+<img width="300" src="https://cloud.githubusercontent.com/assets/2439146/21446732/dea7361e-c87e-11e6-97ad-b0b66f355faa.gif">
+
+You can code this any way you wish. Here is my rough sample code:
+
+```swift
+var rangeSelectedDates: [Date] = []
+func didStartRangeSelecting(gesture: UILongPressGestureRecognizer) {
+    let point = gesture.location(in: gesture.view!)
+    rangeSelectedDates = calendarView.selectedDates
+    if let cellState = calendarView.cellStatus(at: point) {
+        let date = cellState.date
+        if !rangeSelectedDates.contains(date) {
+            let dateRange = calendarView.generateDateRange(from: rangeSelectedDates.first ?? date, to: date)
+            for aDate in dateRange {
+                if !rangeSelectedDates.contains(aDate) {
+                    rangeSelectedDates.append(aDate)
+                }
+            }
+            calendarView.selectDates(from: rangeSelectedDates.first!, to: date, keepSelectionIfMultiSelectionAllowed: true)
+        } else {
+            let indexOfNewlySelectedDate = rangeSelectedDates.index(of: date)! + 1
+            let lastIndex = rangeSelectedDates.endIndex
+            let followingDay = testCalendar.date(byAdding: .day, value: 1, to: date)!
+            calendarView.selectDates(from: followingDay, to: rangeSelectedDates.last!, keepSelectionIfMultiSelectionAllowed: false)
+            rangeSelectedDates.removeSubrange(indexOfNewlySelectedDate..<lastIndex)
+        }
+    }
+    
+    if gesture.state == .ended {
+        rangeSelectedDates.removeAll()
+    }
+}
+
+override func viewDidLoad() {
+	calendarView.allowsMultipleSelection = true
+	let panGensture = UILongPressGestureRecognizer(target: self, action: #selector(didStartRangeSelecting(gesture:)))
+	panGensture.minimumPressDuration = 0.5
+	calendarView.addGestureRecognizer(panGensture)
+	calendarView.rangeSelectionWillBeUsed = true 
+}
+```
