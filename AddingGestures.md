@@ -23,31 +23,4 @@ func didDoubleTapCollectionView(gesture: UITapGestureRecognizer) {
 }
 ```
 
-**This code adds fluid range selection. You can modify it to suite your app**
-
-```swift
-var rangeSelectedDates: [Date] = []
-
-override func viewDidLoad() {
-	calendarView.allowsMultipleSelection = true
-	let panGensture = UILongPressGestureRecognizer(target: self, action: #selector(didStartRangeSelecting(gesture:))) 
-	panGensture.minimumPressDuration = 0.5 // or you can choose what ever duration you want
-	calendarView.addGestureRecognizer(panGensture)
-}
-
-    
-func didStartRangeSelecting(gesture: UILongPressGestureRecognizer) {
-    let point = gesture.location(in: gesture.view!)
-    if let cellState = calendarView.cellStatus(at: point) {
-        if !rangeSelectedDates.contains(cellState.date) {
-            rangeSelectedDates.append(cellState.date)
-            calendarView.selectDates([cellState.date])
-        }
-    }
-    if gesture.state == .ended {
-        rangeSelectedDates.removeAll()
-    }
-}
-```
-
 Complete! 
