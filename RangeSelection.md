@@ -104,7 +104,7 @@ func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: J
 ## Continuous range selection
 ___
 
-If you want your users to select dates in a fluid motion or using any other kind of gestures, then you will need to [add gestures to your calendar](AddingGestures). Here is an example adding long-press gesture.
+If you want your users to select dates in a fluid motion or using any other kind of gestures, then you will need to [add gestures to your calendar](https://patchthecode.github.io/AddingGestures/). Here is an example adding long-press gesture.
 
 <img width="300" src="https://cloud.githubusercontent.com/assets/2439146/21446732/dea7361e-c87e-11e6-97ad-b0b66f355faa.gif">
 
