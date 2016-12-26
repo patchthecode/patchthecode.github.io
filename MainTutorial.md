@@ -16,9 +16,9 @@ There are two parts: The <b><font color="red">Cell</font></b>, and the <b><font 
 
 ##### 1. <font color="red">The cell</font>
 ---
-Like a UITableView, the cell also has 2 sub-parts: a xib file, and a class. 
+Like a UITableView, the cell also has 2 sub-parts: a xib file, and a class. Let's begin by creating a new project.
 
-* First let's create a new xib file. I'll call mine `CellView.xib`. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints.
+* Let's now create a new xib file. I'll call mine `CellView.xib`. I will setup the bare minimum; a single `UILabel` to show the date. It will be centered with Autolayout constraints.
 
 Click on (XCode 8) File -> New -> File -> View
 
