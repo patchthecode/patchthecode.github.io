@@ -32,7 +32,7 @@ Your view may look very large, so to make it smaller, click on the View -> then 
 
 
 
-Drag a `UILabel` unto the view. And then center it using autolayout constraints.
+Drag a `UILabel` unto the view. And then position it using autolayout constraints. If you forget to use autolayout constraints, then your cell will not display properly.
 
 <img width="201" alt="cellxib" src="https://cloud.githubusercontent.com/assets/2439146/19026781/c3793318-88de-11e6-8727-04b773b3700c.png">
 
@@ -63,7 +63,7 @@ Now let's head back to your `cellView.xib` file and make the outlet connections.
 ---
 * This step is easy. Go to your Storyboard and add a `UIView` to it. You can also setup your autolayout constrainst for the calendar view at this point.
 
-  Then, using the same procedure like you did above for the `CellView.xib` diagram above, Set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
+  Then, using the very same procedure like you did for the `CellView.xib` diagram above (which shows the 3 steps in red color), set the subclass of this UIView to be `JTAppleCalendarView`. Then setup an outlet for it to your viewController. I called my outlet `calendarView`. 
   
   If you haven't created your ViewController class yet, do so now. I have called my viewController class simply `ViewController`.
 
@@ -107,7 +107,7 @@ extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDele
         let endDate = Date()                                // You can also use dates created from this function
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
-                                                 numberOfRows: 6,
+                                                 numberOfRows: 6, // Only 1, 2, 3, & 6 are allowed
                                                  calendar: Calendar.current,
                                                  generateInDates: .forAllMonths,
                                                  generateOutDates: .tillEndOfGrid,
@@ -172,6 +172,11 @@ override func viewDidLoad() {
 Well if you followed this tutorial exactly, then your calendar should look like this.
 
 <img width="219" alt="unimpressivecal" src="https://cloud.githubusercontent.com/assets/2439146/19028818/28033c46-88f5-11e6-8a25-fa6fc8651018.png">
+
+If your display does not look like this then:
+
+1. Did you remember to set autolayout constraints?
+2. Is your view shifted off the screen? [Look at a solution here](https://patchthecode.github.io/CommonProblems/). Shifting often occurs if you put your calendar inside of a `UINavigationController`.
 
 
 Pretty unimpressive... :/ 

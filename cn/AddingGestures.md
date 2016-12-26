@@ -7,7 +7,7 @@ layout: default
 
 Gestures are actually added on your calendar instance instead of your cells.
 
-**Paste the following code in your project to get an idea on how to get started**
+**Paste the following code in your project. This code adds double taps**
 
 ```swift
 override func viewDidLoad() {
@@ -24,5 +24,3 @@ func didDoubleTapCollectionView(gesture: UITapGestureRecognizer) {
 ```
 
 Complete! 
-
-Love this project? Support by leaving a Start rating on github.
