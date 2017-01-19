@@ -27,6 +27,11 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 * Found bugs? Then [open a new issue](https://github.com/patchthecode/JTAppleCalendar/issues/new) on github
 * Feeling even more thankful? Pay for my [cup of coffee](https://github.com/patchthecode/JTAppleCalendar/wiki/Support) :)
 
+## Have you developed a cool looking calendar with this library?
+* [Add your images/gifs here](https://github.com/patchthecode/JTAppleCalendar/issues/216) so others can see it. Your calendar maybe be featured on the front page :)
+* Have a look at [past user-uploads here](https://github.com/patchthecode/JTAppleCalendar/issues/2).
+
+
 ## Features
 ---
 
