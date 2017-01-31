@@ -21,7 +21,7 @@ On the image below, you will see that the `View` is first on the hierarchy sitti
 
 <img width="424" src="https://cloud.githubusercontent.com/assets/2439146/19415251/bafe16ea-931f-11e6-9fd7-6837fc932cc4.png">
 
-I have set constraints to have both the `width` and the `height` of the view to `50.00`. I have also set the view to be centered both horizontally and vertically in the cell.
+I have set constraints to have both the `width` and the `height` of the view to `50.00`. I have also set the view to be centered both horizontally and vertically in the cell. I have also finally set the view to be hidden on interface builder. This means that the selected view will be hidden when the calendar first loads.
 
 Go to your `CellView.Swift` file and add the following variable so that you can connect it to the new dragged view.
 
