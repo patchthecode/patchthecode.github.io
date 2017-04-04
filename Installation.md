@@ -6,6 +6,8 @@ layout: default
 ___
 
 ### 1. Installing via CocoaPods
+[<img width="208" alt="screen shot 2017-04-04 at 12 55 19 am" src="https://cloud.githubusercontent.com/assets/2439146/24646594/6ae5348a-18d1-11e7-8824-e579860187ba.png">
+](https://www.youtube.com/watch?v=wyh_DVFeH_w&t=5s)
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
