@@ -6,7 +6,7 @@ layout: default
 ___
 
 ### 1. Installing via CocoaPods
-[<img width="208" alt="screen shot 2017-04-04 at 12 55 19 am" src="https://cloud.githubusercontent.com/assets/2439146/24646594/6ae5348a-18d1-11e7-8824-e579860187ba.png">
+[<img width="300" alt="screen shot 2017-04-04 at 1 01 24 am" src="https://cloud.githubusercontent.com/assets/2439146/24646869/488c78e8-18d2-11e7-8cc6-43caaa2b4ba7.png">
 ](https://www.youtube.com/watch?v=wyh_DVFeH_w&t=5s)
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
@@ -62,6 +62,7 @@ end
 Save, and head back to terminal and run: **pod install**.  If all Went well, installation should be complete. Close the XCodeproject, and instead reopen it using the **workspace** file which generated when installation was completed. Done.
 
 ### 2. Installing via Carthage
+[<img width="300" alt="screen shot 2017-04-04 at 1 02 34 am" src="https://cloud.githubusercontent.com/assets/2439146/24646895/72a9b438-18d2-11e7-8b00-e01e2ce51294.png">](https://www.youtube.com/watch?v=SSFXzNXzn2k&t=2s)
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
