@@ -48,6 +48,9 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 
+**<font color="red">NOTICE: Version 7.0 releasing soon. Tutorials still in progress ⚠️. Found here -></font>** [7.0 Beta](Doc7)
+
+
 ## Contents
 1. [Installation](Installation)
 2. Quick Tutorial - Important to understanding topics below
