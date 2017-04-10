@@ -48,10 +48,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 
-**<font color="red">NOTICE: Version 7.0 releasing soon. Tutorials still in progress ⚠️. Found here -></font>** [7.0 Beta](Doc7)
-
-
-## Contents
+## Contents for Version 6
 1. [Installation](Installation)
 2. Quick Tutorial - Important to understanding topics below
    1. [Part 1](MainTutorial) - Basic concepts
@@ -67,3 +64,17 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 7. [Common questions](CommonQuestions)
 8. [Common errors](CommonProblems)
 
+## Contents for Version 7
+
+**<font color="red">Version 7.0 Tutorials still in progress ⚠️</font>** 
+
+1. [Installation](Installation)
+2. Tutorial 
+   
+   **1. Building a Calendar from scratch**
+   
+   [<img width="300" alt="screen shot 2017-04-07 at 1 10 00 am" src="https://cloud.githubusercontent.com/assets/2439146/24791476/10ae6602-1b2f-11e7-9d2b-038b007090ab.png">](https://www.youtube.com/watch?v=zOphH-h-qCs)
+   
+   **2. Designing the Calendar**
+   
+   [<img width="300" alt="screen shot 2017-04-09 at 5 16 16 pm" src="https://cloud.githubusercontent.com/assets/2439146/24842167/78a730a2-1d48-11e7-9c63-304491283ce6.png">](https://www.youtube.com/watch?v=Qd_Gc67xzlw)
