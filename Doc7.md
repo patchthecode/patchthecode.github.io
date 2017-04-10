@@ -4,8 +4,8 @@ layout: default
 
 
 **<font color="red">This area will be used to create version 7.0 tutorials. Once version 7.0 is released, this area will be merged with the main page. You can test version 7.0 by using the master branch.</font>** 
-_____
 
+---
 
 ## Contents
 1. [Installation](Installation)
