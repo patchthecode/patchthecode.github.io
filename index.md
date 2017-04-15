@@ -29,7 +29,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 
 ## Have you developed a cool looking calendar with this library?
 * [Add your images/gifs here](https://github.com/patchthecode/JTAppleCalendar/issues/216) so others can see it. Your calendar maybe be featured on the front page :)
-* Have a look at [past user-uploads here](https://github.com/patchthecode/JTAppleCalendar/issues/2).
+* Have a look at [past user-uploads here](https://github.com/patchthecode/JTAppleCalendar/wiki/Image-Gallery).
 
 
 ## Features
@@ -44,7 +44,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] Horizontal or vertical mode
 - [x] Ability to add month headers in varying sizes/styles of your liking
 - [x] Ability to scroll to any month by simply using the date
-- [x] Ability to design your calendar [however you want.](https://github.com/patchthecode/JTAppleCalendar/issues/2) You want it, you build it
+- [x] Ability to design your calendar [however you want.](https://github.com/patchthecode/JTAppleCalendar/wiki/Image-Gallery) You want it, you build it
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 
