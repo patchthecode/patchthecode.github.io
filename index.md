@@ -78,3 +78,7 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
    **2. Designing the Calendar**
    
    [<img width="300" alt="screen shot 2017-04-09 at 5 16 16 pm" src="https://cloud.githubusercontent.com/assets/2439146/24842167/78a730a2-1d48-11e7-9c63-304491283ce6.png">](https://www.youtube.com/watch?v=Qd_Gc67xzlw)
+
+   **3. Mastering Calendar layouts**
+   
+   [<img width="300" alt="screen shot 2017-04-16 at 1 02 30 am" src="https://cloud.githubusercontent.com/assets/2439146/25069787/82c4c886-2240-11e7-94be-324cde5bed4a.png">](https://www.youtube.com/watch?v=1Sta3aEo9E4)
