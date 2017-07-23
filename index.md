@@ -48,22 +48,6 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/JTAppleCalendar)
 
 
-## Contents for Version 6
-1. [Installation](Installation)
-2. Quick Tutorial - Important to understanding topics below
-   1. [Part 1](MainTutorial) - Basic concepts
-   2. [Part 2](MainTutorial2) - Setting up selection
-3. DateCells
-	1. [Configuring](DateCellConfiguration)
-	2. [Adding Gestures](AddingGestures)
-	3. [Range selection](RangeSelection)
-4. Calendar
-	1. [Calendar scrolling](CalendarScrolling)
-	2. [Creating headers](Headers)
-	3. [Calendar layout](CalendarLayout)
-7. [Common questions](CommonQuestions)
-8. [Common errors](CommonProblems)
-
 ## Contents for Version 7
 
 **<font color="red">Version 7.0 Tutorials still in progress ⚠️</font>** 
@@ -86,3 +70,21 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
   **4. Common Questions #1**
   
   [<img width="300" alt="screen shot 2017-04-16 at 1 02 30 am" src="https://user-images.githubusercontent.com/2439146/28244395-068cdc62-699f-11e7-9c31-5630745aa130.png">](https://www.youtube.com/watch?v=1Sta3aEo9E4)
+  
+  
+## Contents for Version 6
+  
+1. [Installation](Installation)
+2. Quick Tutorial - Important to understanding topics below
+   1. [Part 1](MainTutorial) - Basic concepts
+   2. [Part 2](MainTutorial2) - Setting up selection
+3. DateCells
+	1. [Configuring](DateCellConfiguration)
+	2. [Adding Gestures](AddingGestures)
+	3. [Range selection](RangeSelection)
+4. Calendar
+	1. [Calendar scrolling](CalendarScrolling)
+	2. [Creating headers](Headers)
+	3. [Calendar layout](CalendarLayout)
+7. [Common questions](CommonQuestions)
+8. [Common errors](CommonProblems)
