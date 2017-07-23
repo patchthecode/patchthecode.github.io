@@ -56,20 +56,40 @@ This Library is a `UICollectionView` subclass. This means your date cells will l
 2. Tutorial 
    
    **1. Building a Calendar from scratch**
+   * Hello world program for this library.
    
    [<img width="300" alt="screen shot 2017-04-07 at 1 10 00 am" src="https://cloud.githubusercontent.com/assets/2439146/24791476/10ae6602-1b2f-11e7-9d2b-038b007090ab.png">](https://www.youtube.com/watch?v=zOphH-h-qCs)
    
+   
+   
    **2. Designing the Calendar [Part1]**
+   * How to design your calendar.
    
    [<img width="300" alt="screen shot 2017-04-09 at 5 16 16 pm" src="https://cloud.githubusercontent.com/assets/2439146/24842167/78a730a2-1d48-11e7-9c63-304491283ce6.png">](https://www.youtube.com/watch?v=Qd_Gc67xzlw)
+   
+   
 
    **3. Mastering Calendar layouts**
+   * This video shows you almost every layout you can accomplish with this library.
    
    [<img width="300" alt="screen shot 2017-04-16 at 1 02 30 am" src="https://cloud.githubusercontent.com/assets/2439146/25069787/82c4c886-2240-11e7-94be-324cde5bed4a.png">](https://www.youtube.com/watch?v=1Sta3aEo9E4)
+   
+   
 
   **4. Common Questions #1**
   
+  This video answers common questions.
+  
+  * Starting your calendar off at a particular date.
+  * Configuring tday's date.
+  * How to load dates from a server.
+  * Creating headers.
+  * Adding simple animation.
+  * Creating a date boundary.
+  
   [<img width="300" alt="screen shot 2017-04-16 at 1 02 30 am" src="https://user-images.githubusercontent.com/2439146/28244395-068cdc62-699f-11e7-9c31-5630745aa130.png">](https://www.youtube.com/watch?v=1Sta3aEo9E4)
+  
+  
   
   
 ## Contents for Version 6
