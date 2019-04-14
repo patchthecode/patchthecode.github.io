@@ -142,9 +142,6 @@ downGitModule.factory('downGitService', [
 
         return {
             downloadZippedFiles: function(parameters, progress, toastr) {
-                alert(parameters);
-                alert(progress);
-                alert(toastr);
                 repoInfo = parseInfo(parameters);
 
                 if(!repoInfo.resPath || repoInfo.resPath==""){
